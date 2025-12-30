@@ -39,7 +39,7 @@ int main(void)
         printf("1. Print calendar\n");
         printf("2. Exit\n");
         printf("Enter the menu: ");
-        scnaf("%d", &select);
+        scanf("%d", &select);
 
         if (select == 1) {
             printf("Enter the month: ");
@@ -86,4 +86,64 @@ int get_date_start(int month)
         printf("get_start_date(): error in month\n");
         return -1;
     }
+}
+
+int get_date_range(int month)
+{
+    if (month == 1) {
+        return D_JAN;
+    } else if (month == 2) {
+        return D_FEB;
+    } else if (month == 3) {
+        return D_MAR;
+    } else if (month == 4) {
+        return D_APR;
+    } else if (month == 5) {
+        return D_MAY;
+    } else if (month == 6) {
+        return D_JUN;
+    } else if (month == 7) {
+        return D_JUL;
+    } else if (month == 8) {
+        return D_AUG;
+    } else if (month == 9) {
+        return D_SEP;
+    } else if (month == 10) {
+        return D_OCT;
+    } else if (month == 11) {
+        return D_NOV;
+    } else if (month == 12) {
+        return D_DEC;
+    } else {
+        printf("get_start_range(): error in month\n");
+        return -1;
+    }
+}
+
+void print_month(int month)
+{
+    int w_counter;
+    int walker;
+    int date_start = get_date_start(month);
+    int date_range = get_date_range(month);
+
+    printf("\n\n     2020 %2d Calendar \n\n", month);
+    printf("SUN MON TUE WED THU FRI SAT \n");
+    printf("---------------------------\n");
+
+    for (w_counter = 0; w_counter < date_start; w_counter++){
+        printf("   ");
+    }
+    for (walker = 1; walker <= date_range; walker++){
+        if (w_counter > 6) {
+            printf("\n");
+            w_counter = 1;
+        } else {
+            w_counter++;
+        }
+        printf("%3d", walker);
+    }
+    printf("\n----------------------\n\n\n");
+
+    return;
 }

@@ -42,14 +42,15 @@ int main(void)
 
     const double P = (V * I_load) / eta;
     const double E_usable = V * C * eta * (1 - R);
-    const double t = E_usable / P;
-    const double d = vel * t;
+    const double t_h = E_usable / P;
+    const double t_min = t_h * 60.0;
+    const double d_km = vel * t_h;
     
     printf("-----------------------\n");
     printf("사용 가능 에너지 : %.2lf [Wh]\n", E_usable);
     printf("소비 전력 : %.2lf [W]\n", P);
-    printf("예상 런타임 : %.2lf [h]\n", t);
-    printf("예상 주행 거리 : %.2lf [km]\n", d);
+    printf("예상 런타임 : %.2lf [h] (%.1f min)\n", t_h, t_min);
+    printf("예상 주행 거리 : %.2lf [km]\n", d_km);
     printf("-----------------------\n");
 
     return 0;
