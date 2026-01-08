@@ -1,0 +1,23 @@
+
+### Linux 환경 구축 강좌
+
+
+### 총 소요 : ? days (2025.12.23 ~ 2026.01.??)
+혼자 공부하는 C언어 <- 교재(자습할 때 사용했던 그 교재)
+교안은 교수님이 수업 전마다 배포해줌
+
+
+### Summary
+Not yet...
+
+
+### TimeLine
+day1: 프로그램 설치 및 git 연결
+day2: c언어 기초 practice
+day3: 기초 연산자 + 모터 구동 + 배터리 효율
+day4: 견인력 + 파이 + 자잘 practice
+day5: 히스테리시스 + 랜덤 속도 입력
+day6: IR판단 코드 + 포인터 시작
+day7: 포인터 + 버퍼 개념 (scanf gets fgets / puts fputs)
+day8: string.h 함수 직접 만들기 (strcpy, strcat, strlen, strcmp) + 포인터&배열 + 가로세로 합 구하는 함수 테스트
+day9: 동적 할당(malloc, calloc, realloc) + 배열 포인터, 특히 동적 할당에 있어서 주소와 free 아주 주의해서 사용
