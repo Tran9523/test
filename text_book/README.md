@@ -29,3 +29,5 @@ day7: 포인터 + 버퍼 개념 (scanf gets fgets / puts fputs)
 day8: string.h 함수 직접 만들기 (strcpy, strcat, strlen, strcmp) + 포인터&배열 + 가로세로 합 구하는 함수 테스트
 
 day9: 동적 할당(malloc, calloc, realloc) + 배열 포인터, 특히 동적 할당에 있어서 주소와 free 아주 주의해서 사용
+
+day10: 구조체, typedef 위주로 연습하기 + 특히 구조체 넘어오면서 배열과 주소 * 포인터 등 혼용되어 어려우니 주기적으로 복습 (연습문제: 로봇 좌표 이동 & 차동구동 로봇 속도)
